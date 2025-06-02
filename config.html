@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Configuration des Seuils</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .threshold-row {
+            display: flex;
+            gap: 2rem;
+            margin-bottom: 1rem;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        .threshold-group {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+        .threshold-group label {
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        input[type="number"] {
+            padding: 5px;
+            width: 100px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Configuration des Seuils</h1>
+        <nav>
+            <a href="index.html">Tableau de bord</a>
+            <a href="history.php">Historique</a>
+        </nav>
+    </header>
+
+    <main>
+        <form id="threshold-form">
+            <div class="threshold-row">
+                <div class="threshold-group">
+                    <label for="temp">Température</label>
+                    <input type="number" name="Température" id="temp" placeholder="Seuil" required>
+                </div>
+                <div class="threshold-group">
+                    <label for="hum">Humidité</label>
+                    <input type="number" name="Humidité" id="hum" placeholder="Seuil" required>
+                </div>
+                <div class="threshold-group">
+                    <label for="lum">Luminosité</label>
+                    <input type="number" name="Luminosité" id="lum" placeholder="Seuil" required>
+                </div>
+            </div>
+            <button type="submit">Enregistrer</button>
+        </form>
+    </main>
+    
+    <section id="threshold-display">
+        <h2>Seuils Actuels </h2>
+        </section>
+        
+        </body>
+
+    </html>
+    

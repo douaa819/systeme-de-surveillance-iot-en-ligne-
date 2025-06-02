@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tableau de Bord IoT</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Tableau de Bord - Système d'Alerte IoT</h1>
+        <nav>
+            <a href="config.html">Configurer les seuils</a>
+            <a href="history.php">Historique des alertes</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="dashboard">
+            <h2>Valeurs des Capteurs</h2>
+            <div id="sensor-container">
+                <div class="sensor">
+                    <h3>Température</h3>
+                    <p class="value" id="temp-value">-- °C</p>
+                </div>
+                <div class="sensor">
+                    <h3>Humidité</h3>
+                    <p class="value" id="humidity-value">-- %</p>
+                </div>
+                <div class="sensor">
+                    <h3>Luminosité</h3>
+                    <p class="value" id="light-value">-- lx</p>
+                </div>
+            </div>
+        </section>
+        <div id="alert-message"></div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
